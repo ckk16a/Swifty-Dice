@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6183DABA253A7B5D0011A717 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6183DAB9253A7B5D0011A717 /* AVFoundation.framework */; };
+		6183DABC253A7BA00011A717 /* criticalmiss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6183DABB253A7BA00011A717 /* criticalmiss.mp3 */; };
+		6183DAC1253A7BC80011A717 /* criticalhit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6183DAC0253A7BC80011A717 /* criticalhit.mp3 */; };
+		6183DAC4253A7BDB0011A717 /* diceroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6183DAC3253A7BDB0011A717 /* diceroll.wav */; };
 		61AE19322535E9BC0066257B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE19312535E9BC0066257B /* AppDelegate.swift */; };
 		61AE19342535E9BC0066257B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE19332535E9BC0066257B /* SceneDelegate.swift */; };
 		61AE19362535E9BC0066257B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE19352535E9BC0066257B /* ViewController.swift */; };
@@ -16,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6183DAB9253A7B5D0011A717 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6183DABB253A7BA00011A717 /* criticalmiss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = criticalmiss.mp3; path = ../../../../.Trash/criticalmiss.mp3; sourceTree = "<group>"; };
+		6183DABF253A7BB70011A717 /* criticalmiss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = criticalmiss.mp3; sourceTree = "<group>"; };
+		6183DAC0253A7BC80011A717 /* criticalhit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = criticalhit.mp3; path = ../../../../../.Trash/criticalhit.mp3; sourceTree = "<group>"; };
+		6183DAC3253A7BDB0011A717 /* diceroll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = diceroll.wav; path = ../../../../../Downloads/diceroll.wav; sourceTree = "<group>"; };
 		61AE192E2535E9BC0066257B /* Swifty Dice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swifty Dice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AE19312535E9BC0066257B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61AE19332535E9BC0066257B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +40,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6183DABA253A7B5D0011A717 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6183DAB8253A7B5D0011A717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6183DAB9253A7B5D0011A717 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6183DABE253A7BB10011A717 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6183DAC3253A7BDB0011A717 /* diceroll.wav */,
+				6183DAC0253A7BC80011A717 /* criticalhit.mp3 */,
+				6183DABF253A7BB70011A717 /* criticalmiss.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		61AE19252535E9BC0066257B = {
 			isa = PBXGroup;
 			children = (
 				61AE19302535E9BC0066257B /* Swifty Dice */,
 				61AE192F2535E9BC0066257B /* Products */,
+				6183DAB8253A7B5D0011A717 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +85,7 @@
 		61AE19302535E9BC0066257B /* Swifty Dice */ = {
 			isa = PBXGroup;
 			children = (
+				6183DABB253A7BA00011A717 /* criticalmiss.mp3 */,
 				61AE19312535E9BC0066257B /* AppDelegate.swift */,
 				61AE19332535E9BC0066257B /* SceneDelegate.swift */,
 				61AE19352535E9BC0066257B /* ViewController.swift */,
@@ -63,6 +93,7 @@
 				61AE193A2535E9BD0066257B /* Assets.xcassets */,
 				61AE193C2535E9BD0066257B /* LaunchScreen.storyboard */,
 				61AE193F2535E9BD0066257B /* Info.plist */,
+				6183DABE253A7BB10011A717 /* Sounds */,
 			);
 			path = "Swifty Dice";
 			sourceTree = "<group>";
@@ -124,7 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6183DAC1253A7BC80011A717 /* criticalhit.mp3 in Resources */,
 				61AE193E2535E9BD0066257B /* LaunchScreen.storyboard in Resources */,
+				6183DAC4253A7BDB0011A717 /* diceroll.wav in Resources */,
+				6183DABC253A7BA00011A717 /* criticalmiss.mp3 in Resources */,
 				61AE193B2535E9BD0066257B /* Assets.xcassets in Resources */,
 				61AE19392535E9BC0066257B /* Main.storyboard in Resources */,
 			);
@@ -287,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6U2ZVMFW7;
 				INFOPLIST_FILE = "Swifty Dice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y6U2ZVMFW7;
 				INFOPLIST_FILE = "Swifty Dice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
